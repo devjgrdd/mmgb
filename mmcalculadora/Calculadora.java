@@ -14,7 +14,7 @@ public class Calculadora {
 	}
 	/**
 	 * float sumar(float n1,float n2)
-	 * sumar 2 números decimales
+	 * suma 2 números decimales
 	 * @param n1
 	 * @param n2
 	 * @return la suma de n1 y n2
