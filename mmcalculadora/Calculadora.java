@@ -1,5 +1,7 @@
 package mmcalculadora;
 
+import java.util.Scanner;
+
 public class Calculadora {
 	
 	public static void menu() {
@@ -12,6 +14,10 @@ public class Calculadora {
 
 	public static void main(String[] args) {
 		menu();
+		Scanner sc = new Scanner(System.in);
+		float n1 = 0.0f;
+		n1 = sc.nextFloat();
+		System.out.println(n1);
 	}
 
 }
