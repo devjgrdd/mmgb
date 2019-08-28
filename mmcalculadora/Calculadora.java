@@ -7,7 +7,7 @@ public class Calculadora {
 		System.out.println("sumar - s");
 		System.out.println("restar - r");
 		System.out.println("multiplicar - m");
-		System.out.println("dividir - d");
+		System.out.println("dividir - d\n");
 	}
 
 	public static void main(String[] args) {
