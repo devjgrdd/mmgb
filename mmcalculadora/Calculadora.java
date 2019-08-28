@@ -40,11 +40,35 @@ public class Calculadora {
 					case 1:
 						res = calculadora.sumar(n1,n2);
 						break;
+					case 2:
+						res = calculadora.restar(n1,n2);
+						break;
+					case 3:
+						res = calculadora.multiplicar(n1,n2);
+						break;
+					case 4:
+						res = calculadora.dividir(n1,n2);
+						break;
 				}
 			}
 			System.out.println(res);
 		}
 		
+	}
+
+	private float dividir(float n1, float n2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private float multiplicar(float n1, float n2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private float restar(float n1, float n2) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
