@@ -12,7 +12,13 @@ public class Calculadora {
 		System.out.println("dividir - 4\n");
 		System.out.println("finalizar - 0");
 	}
-	
+	/**
+	 * float sumar(float n1,float n2)
+	 * sumar 2 números decimales
+	 * @param n1
+	 * @param n2
+	 * @return la suma de n1 y n2
+	 */
 	public float sumar(float n1, float n2) {
 		return n1 + n2;
 	}
