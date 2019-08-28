@@ -16,7 +16,7 @@ public class Calculadora {
 		Scanner sc = new Scanner(System.in);
 		float n1 = 0.0f;
 		float n2 = 0.0f;
-		menu();
+		Calculadora.menu();
 	}
 
 }
