@@ -26,13 +26,15 @@ public class Calculadora {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		float n1 = 0.0f;
-		float n2 = 0.0f;
+		float n1;
+		float n2;
 		float res = 0.0f;
 		boolean continuar = true;
 		char opcion = ' ';
 		Calculadora calculadora = new Calculadora();
 		while(continuar) {
+			n1=0.0f;
+			n2=0.0f;
 			do {
 				menu();
 				opcion=sc.next().charAt(0);
@@ -46,20 +48,19 @@ public class Calculadora {
 				}
 				catch(Exception e) {
 					System.out.println(e.toString());
+					continuar = false;
 				}
-				finally {
-					n1=0.0f;
-				}
+				
 				System.out.println("n2?");
 				try {
 					n2=sc.nextFloat();
 				}
 				catch(Exception e) {
 					System.out.println(e.toString());
+					continuar=false;
 				}
-				finally {
-					n2=0.0f;
-				}
+				
+				res=0.0f;
 				switch(opcion) {
 					case '1':
 						res = calculadora.sumar(n1,n2);
@@ -74,8 +75,9 @@ public class Calculadora {
 						res = calculadora.dividir(n1,n2);
 						break;
 				}
+				System.out.println("Resultado: "+res);
 			}
-			System.out.println("Resultado: "+res);
+			
 		}
 		
 	}
@@ -85,7 +87,7 @@ public class Calculadora {
 		try {
 			res=n1/n2;
 		}catch(Exception e) {
-			System.out.println(e.getMessage());
+		//	System.out.println(e.toString());
 		}
 		return res;
 	}
