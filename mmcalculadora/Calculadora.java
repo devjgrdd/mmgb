@@ -7,7 +7,7 @@ public class Calculadora {
 	}
 
 	public static void main(String[] args) {
-		menu();
+		Calculadora.menu();
 	}
 
 }
