@@ -9,8 +9,8 @@ public class Calculadora {
 		System.out.println("sumar - 1");
 		System.out.println("restar - 2");
 		System.out.println("multiplicar - 3");
-		System.out.println("dividir - 4\n");
-		System.out.println("finalizar - 0");
+		System.out.println("dividir - 4");
+		System.out.println("finalizar - 0\n");
 	}
 
 	/**
@@ -36,29 +36,46 @@ public class Calculadora {
 			do {
 				menu();
 				opcion=sc.next().charAt(0);
-			}while(opcion<0 || opcion>4);
-			if(opcion==4) continuar = false;
+				System.out.println("Opción: "+opcion);
+			}while(opcion<'0' || opcion>'4');
+			if(opcion=='0') continuar = false;
 			else {
 				System.out.println("n1?");
-				n1=sc.nextFloat();
+				try {
+					n1=sc.nextFloat();
+				}
+				catch(Exception e) {
+					System.out.println(e.toString());
+				}
+				finally {
+					n1=0.0f;
+				}
 				System.out.println("n2?");
-				n2=sc.nextFloat();
+				try {
+					n2=sc.nextFloat();
+				}
+				catch(Exception e) {
+					System.out.println(e.toString());
+				}
+				finally {
+					n2=0.0f;
+				}
 				switch(opcion) {
-					case 1:
+					case '1':
 						res = calculadora.sumar(n1,n2);
 						break;
-					case 2:
+					case '2':
 						res = calculadora.restar(n1,n2);
 						break;
-					case 3:
+					case '3':
 						res = calculadora.multiplicar(n1,n2);
 						break;
-					case 4:
+					case '4':
 						res = calculadora.dividir(n1,n2);
 						break;
 				}
 			}
-			System.out.println(res);
+			System.out.println("Resultado: "+res);
 		}
 		
 	}
