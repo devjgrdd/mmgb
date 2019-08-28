@@ -18,7 +18,7 @@ public class Calculadora {
 		float n2 = 0.0f;
 		boolean continuar = true;
 		while(continuar) {
-			menu();
+			Calculadora.menu();
 		}
 		
 	}
