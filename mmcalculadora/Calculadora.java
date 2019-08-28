@@ -64,18 +64,21 @@ public class Calculadora {
 	}
 
 	private float dividir(float n1, float n2) {
-		// TODO Auto-generated method stub
-		return 0;
+		float res = 0.0f;
+		try {
+			res=n1/n2;
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return res;
 	}
 
 	private float multiplicar(float n1, float n2) {
-		// TODO Auto-generated method stub
-		return 0;
+		return n1*n2;
 	}
 
 	private float restar(float n1, float n2) {
-		// TODO Auto-generated method stub
-		return 0;
+		return n1-n2;
 	}
 
 }
