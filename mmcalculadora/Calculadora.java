@@ -13,11 +13,10 @@ public class Calculadora {
 	}
 
 	public static void main(String[] args) {
-		Calculadora.menu();
 		Scanner sc = new Scanner(System.in);
 		float n1 = 0.0f;
-		n1 = sc.nextFloat();
-		System.out.println(n1);
+		float n2 = 0.0f;
+		Calculadora.menu();
 	}
 
 }
